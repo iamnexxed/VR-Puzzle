@@ -36,7 +36,7 @@ public class ObjectController : MonoBehaviour
     /// </summary>
     public Material GazedAtMaterial;
 
-    
+    public bool canHighlight = true;
 
     private Renderer _myRenderer;
     private Vector3 _startingPosition;
@@ -106,7 +106,8 @@ public class ObjectController : MonoBehaviour
     {
         if (InactiveMaterial != null && GazedAtMaterial != null)
         {
-            _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
+            if(canHighlight)
+                _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
         }
     }
 }

@@ -6,11 +6,20 @@ public class Pillar : ObjectController
 {
     public bool isActive = false;
     public GameObject crystalObject;
+
+    public Collector playerCollector;
     // Start is called before the first frame update
     void Start()
     {
         base.Start();
-        ToggleCrystal();
+
+        isActive = false;
+        crystalObject.SetActive(isActive);
+
+        if (!playerCollector)
+        {
+            playerCollector = FindObjectOfType<Collector>();
+        }
     }
 
 
@@ -22,6 +31,14 @@ public class Pillar : ObjectController
 
     public override void OnPointerEnter()
     {
+        if(playerCollector.crystals > 0 || isActive)
+        {
+            canHighlight = true;
+        }
+        else
+        {
+            canHighlight = false;
+        }
         base.OnPointerEnter();
     }
 
@@ -32,6 +49,21 @@ public class Pillar : ObjectController
 
     public void ToggleCrystal()
     {
-        crystalObject.SetActive(!crystalObject.activeInHierarchy);
+        if(isActive)
+        {
+            playerCollector.CollectCrystal();
+            isActive = false;
+        }
+        else
+        {
+            if(playerCollector.crystals > 0)
+            {
+                isActive = true;
+                playerCollector.PlaceCrystal();
+            }
+                
+        }
+        
+        crystalObject.SetActive(isActive);
     }
 }
