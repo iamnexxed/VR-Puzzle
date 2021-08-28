@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -750,7 +750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 2.49}
+  m_AnchoredPosition: {x: 0, y: 1}
   m_SizeDelta: {x: 1334, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694591611
@@ -834,7 +834,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -970,6 +970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InactiveMaterial: {fileID: 2100000, guid: 69230bdae6d2a49e2ad19faa2dc77a71, type: 2}
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
+  canHighlight: 1
   displayText: {fileID: 602159198}
   buttonName: 2
 --- !u!1 &851811454
@@ -1121,6 +1122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InactiveMaterial: {fileID: 2100000, guid: 69230bdae6d2a49e2ad19faa2dc77a71, type: 2}
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
+  canHighlight: 1
   displayText: {fileID: 1304038706}
   buttonName: 1
 --- !u!65 &882560505
@@ -1534,6 +1536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InactiveMaterial: {fileID: 2100000, guid: 69230bdae6d2a49e2ad19faa2dc77a71, type: 2}
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
+  canHighlight: 1
   displayText: {fileID: 69694087}
   buttonName: 0
 --- !u!1 &1304038704
@@ -2361,6 +2364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InactiveMaterial: {fileID: 2100000, guid: 69230bdae6d2a49e2ad19faa2dc77a71, type: 2}
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
+  canHighlight: 1
   displayText: {fileID: 0}
   buttonName: 0
 --- !u!1 &2054568467
@@ -2565,5 +2569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InactiveMaterial: {fileID: 2100000, guid: 69230bdae6d2a49e2ad19faa2dc77a71, type: 2}
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
+  canHighlight: 1
   displayText: {fileID: 0}
   buttonName: 1

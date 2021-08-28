@@ -19,7 +19,7 @@ public class CameraRotate : MonoBehaviour
     {
 #if UNITY_EDITOR
         Cursor.lockState = CursorLockMode.Locked;
-
+        Cursor.visible = false;
 #endif
     }
 
