@@ -22,6 +22,7 @@ public class LevelComplete : MonoBehaviour
             Debug.Log("Level Complete");
 
             // Load next level
+            SceneManager.LoadScene("Level2");
         }
     }
 }
