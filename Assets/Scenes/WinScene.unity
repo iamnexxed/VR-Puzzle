@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 69694088}
   - component: {fileID: 69694087}
   m_Layer: 6
-  m_Name: StartText
+  m_Name: MenuText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,7 +269,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: START GAME
+  m_Text: 'MAIN MENU
+
+'
 --- !u!222 &69694088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -878,7 +880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &757069642
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1092,7 +1094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &882560503
 Transform:
   m_ObjectHideFlags: 0
@@ -1538,7 +1540,7 @@ MonoBehaviour:
   GazedAtMaterial: {fileID: 2100000, guid: 8aa7f9490fc024f7d992d982441a8b77, type: 2}
   canHighlight: 1
   displayText: {fileID: 69694087}
-  buttonName: 0
+  buttonName: 3
 --- !u!1 &1304038704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,8 +1575,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -21}
-  m_SizeDelta: {x: 500, y: 300}
+  m_AnchoredPosition: {x: 0, y: -96}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304038706
 MonoBehaviour:
@@ -1611,12 +1613,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'INSTRUCTIONS
 
-
-    - Point on the ground to walk towards the position
-
-
-    -
-    Object that highlights is interactible'
+    Instructions Will Be Shown Here'
 --- !u!222 &1304038707
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1847,7 +1844,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MAIN MENU
+  m_Text: LEVEL COMPLETE
 --- !u!222 &1572607872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1983,7 +1980,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692084800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.75}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 1304038705}
@@ -1992,7 +1989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.4}
+  m_AnchoredPosition: {x: 0, y: 2.96}
   m_SizeDelta: {x: 500, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1692084802

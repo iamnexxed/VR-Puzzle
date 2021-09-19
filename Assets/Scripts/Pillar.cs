@@ -11,19 +11,7 @@ public class Pillar : ObjectController
 
     // public LightPuzzle.LightColors pillarColor;
 
-    private GameObject nextObject;
-
-    public GameObject Next
-    {
-        get
-        {
-            return nextObject;
-        }
-        set
-        {
-            nextObject = value;
-        }
-    }
+   
 
     // Start is called before the first frame update
     void Start()

@@ -20,6 +20,7 @@ public class UIController : ObjectController
         Start,
         Instructions,
         Quit,
+        MainMenu,
         None
     }
 
@@ -33,6 +34,10 @@ public class UIController : ObjectController
         else if (buttonName == ButtonName.Quit)
         {
             Application.Quit();
+        }
+        else if (buttonName == ButtonName.MainMenu)
+        {
+            sceneCanvasManager.LoadMainMenu();
         }
     }
 

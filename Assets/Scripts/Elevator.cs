@@ -12,11 +12,14 @@ public class Elevator : MonoBehaviour
 
     public Transform parentObject;
 
+    public float maxHeight = 10f;
+
     bool startElevator = false;
 
     Transform player;
 
     Rigidbody rb;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +38,12 @@ public class Elevator : MonoBehaviour
     {
         if (startElevator)
         {
-            if (Vector3.Distance(rb.position, destTransform.position) > stopDistance)
+            //if (Vector3.Distance(rb.position, destTransform.position) > stopDistance)
             {
-                Vector3 newPos = new Vector3(rb.position.x, Mathf.Lerp(transform.position.y, destTransform.position.y, Time.deltaTime * speed), rb.position.z);
-                rb.MovePosition(newPos);
+                //Vector3 newPos = new Vector3(rb.position.x, Mathf.Lerp(transform.position.y, destTransform.position.y, Time.fixedDeltaTime * speed), rb.position.z);
+                //rb.MovePosition(newPos);
+
+                rb.transform.position = new Vector3(transform.position.x, Mathf.SmoothStep(transform.position.y, transform.position.y + maxHeight, Time.fixedDeltaTime * speed), transform.position.z);
             }
             
         }

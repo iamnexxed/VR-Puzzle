@@ -35,6 +35,8 @@ public class LevelComplete : MonoBehaviour
             else if(currentLevel == Levels.Level2)
             {
                 // Show win screen
+                SceneManager.LoadScene("WinScene");
+
                 Debug.Log("Level 2 Complete");
             }
         }

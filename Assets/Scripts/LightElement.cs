@@ -80,7 +80,7 @@ public class LightElement : MonoBehaviour
                 {
                     if (!element.GetComponent<LightElement>().isSource)
                     {
-                        Debug.Log("Path Found!");
+                       
                         isPathComplete = true;
                         break;
                     }
@@ -106,9 +106,15 @@ public class LightElement : MonoBehaviour
 
     public void LaserComplete()
     {
-        isPathComplete = true;
-        connectedObjects.Add(finalObject);
-        DrawLine();
+        if(!isPathComplete)
+        {
+            Debug.Log("Path Found!");
+            FindObjectOfType<Door>().OpenDoor();
+            isPathComplete = true;
+            connectedObjects.Add(finalObject);
+            DrawLine();
+        }
+        
     }
    
 }
