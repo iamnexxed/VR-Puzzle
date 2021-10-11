@@ -5,6 +5,7 @@ An escape the puzzle room game made with VR.
 Technologies used:
 - Unity
 - C#
+- Navigation Mesh used for Point and Click movement
 - Google Cardboard XR Plugin
 - Currently built for iOS with XCode
 
