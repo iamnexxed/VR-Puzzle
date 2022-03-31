@@ -1,6 +1,6 @@
 # VR-Puzzle
 
-An escape the puzzle room game made with VR.
+An escape the puzzle room game made with VR. This is a prototype project which can be used to develop an Escape Room game in Virtual Reality.
 
 Technologies used:
 - Unity
